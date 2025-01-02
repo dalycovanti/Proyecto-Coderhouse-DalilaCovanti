@@ -84,6 +84,7 @@ nav a:hover{
 
 .seccion-2 img{
     height: 200px;
+    border-radius: 20px;
 }
 
 .seccion-2 img:hover{
@@ -172,4 +173,24 @@ h2, p{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+/* -----------------Hair routine----------------------- */
+
+ol li{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+ol li img{
+    height: 300px;
+}
+
+ol li h6{
+    text-decoration: underline;
+}
+
+.title_ol{
+    font-weight: bold;
 }
