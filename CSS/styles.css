@@ -64,13 +64,26 @@ nav a:hover{
 /* --------------Seccion 1-------------------- */
 .seccion-1 img{
     height: 500px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-   
 }
+
 .seccion-1{
     display: flex;
     justify-content: center;
-    background-color: #dbabbf;
+    /* background-image: radial-gradient(#dbabbf,#dbabbf); */
+    background-image: radial-gradient(#d5acbd,#d5acbd);
+    position: relative;
+}
+.seccion-1 button{
+    position:absolute;
+    margin: 10px;
+    top: 75%;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.seccion-1 button a{
+    text-decoration: none;
 }
 
 /* --------------Seccion 2-------------------- */
@@ -144,7 +157,7 @@ footer li:hover{
 
 /* ------------------SOBRE NOSOTROS------------ */
 
-h2, p{
+.sobre-nosotros h2, .sobre-nosotros p{
     text-align: center;
     padding: 10px;
     margin: 10px;
@@ -194,3 +207,39 @@ ol li h6{
 .title_ol{
     font-weight: bold;
 }
+
+
+/* ---------------Tienda-------------------- */
+.productos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.productos img{
+    width: 100%;
+}
+
+.productos div{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.productos button{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.productos p{
+    text-align: center;
+}
+
+.tienda{
+    text-align: center;
+    padding: 10px;
+}
+
