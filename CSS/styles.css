@@ -13,6 +13,11 @@ header{
     min-height: 70px;
     align-items: center;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 h1{
@@ -72,18 +77,22 @@ nav a:hover{
     /* background-image: radial-gradient(#dbabbf,#dbabbf); */
     background-image: radial-gradient(#d5acbd,#d5acbd);
     position: relative;
+    margin-top: 70px;
 }
 .seccion-1 button{
     position:absolute;
     margin: 10px;
     top: 75%;
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 200px;
     border-radius: 5px;
+    background-color: #CDB4DB;
+    border-color: #CDB4DB;
 }
 
 .seccion-1 button a{
     text-decoration: none;
+    font-size: 30px;
 }
 
 /* --------------Seccion 2-------------------- */
@@ -93,6 +102,7 @@ nav a:hover{
     padding-top: 50px;
     padding-left: 150px;
     padding-right: 150px;
+    flex-wrap: wrap;
 }
 
 .seccion-2 img{
@@ -117,10 +127,26 @@ nav a:hover{
 
 .seccion-3{
     background-color: #CDB4DB;
-    height: 200px;
-    width: 100%;
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 1000px;
+    width: 100%;
 }
+
+.seccion-3 img{
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.img-expand{
+    grid-column: span 2;
+    object-fit: cover;
+}
+
 
 /* -------------------FOOTER-----------------*/
 
@@ -174,6 +200,10 @@ footer li:hover{
     justify-content: center;
 }
 
+.sobre-nosotros{
+    margin-top: 70px;
+}
+
 
 /* ------------------CONTACTO----------------------- */
 
@@ -188,32 +218,48 @@ footer li:hover{
     align-items: center;
 }
 
+.contacto h2, .contacto p{
+    text-align: center;
+    padding: 10px;
+}
+
+.contacto{
+    margin-top: 70px;
+}
 /* -----------------Hair routine----------------------- */
 
-ol li{
+.hair_routine ol li{
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
-ol li img{
+.hair_routine ol li img{
     height: 300px;
 }
 
-ol li h6{
+.hair_routine ol li h6{
     text-decoration: underline;
 }
-
+.hair_routine h2{
+    text-align: center;
+}
 .title_ol{
     font-weight: bold;
+}
+
+.hair_routine{
+    margin-top: 90px;
 }
 
 
 /* ---------------Tienda-------------------- */
 .productos{
-    width: 100%;
+    
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 2fr);
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .productos img{
@@ -227,11 +273,21 @@ ol li h6{
     gap: 20px;
     padding: 10px;
     margin: 10px;
+    justify-content: space-between;
 }
 
 .productos button{
     padding: 5px;
     border-radius: 5px;
+    background-color: #BDE0FE;
+    border-color: black;
+    position: relative;
+    
+}
+.productos button a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .productos p{
@@ -241,5 +297,6 @@ ol li h6{
 .tienda{
     text-align: center;
     padding: 10px;
+    margin-top: 70px;
 }
 
