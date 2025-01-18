@@ -300,3 +300,108 @@ footer li:hover{
     margin-top: 70px;
 }
 
+/*------------ HAIRCARE -------------------*/
+
+.haircare{
+    margin-top: 100px;
+}
+
+.haircare h2{
+    text-align: center;
+}
+
+.haircare div img{
+    height: 350px;
+    padding: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.haircare div{
+    background-color: #BDE0FE;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+}
+
+/* ---------DIAGNOSTICA TU CABELLO -------------*/
+
+.diagnostico{
+    margin-top: 90px;
+    padding-left: 30px;
+}
+
+.diagnostico h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.diagnostico h6{
+    font-size: medium;
+    padding-top: 10px;
+}
+
+.diagnostico ul li{
+    padding-top: 10px;
+}
+
+.diagnostico .tarjetas{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.diagnostico .tarjetas img{
+    height: 300px;
+    border-radius: 3px;
+
+}
+
+.diagnostico .tarjetas p{
+    text-align: center;
+    background-color: #b6aec2;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.diagnostico .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.diagnostico .banner div{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 700px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+ .diagnostico .banner img{
+    width: 90%;
+    object-fit: cover;
+ }
+
+ .diagnostico .banner h6, .diagnostico .banner p{
+    text-align: center;
+    padding: 20px;
+ }
+
+ .diagnostico .banner button{
+    background-color: #BDE0FE;
+    width: 200px;
+    border-radius: 5px;
+ }
+ 
+ .diagnostico .banner button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    
+ }
