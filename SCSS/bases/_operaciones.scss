@@ -1,0 +1,22 @@
+// VARIABLES
+
+
+// LISTAS
+$colores: #FFC8DD, #FFAFCC, #CDB4DB, #BDE0FE, #A2D2FF;
+// EJEMPLO
+// H1{
+//     color:nth($colores, 2);
+// }
+
+
+// OPERACIONES
+// +-*/
+
+
+// EXTENDS
+%flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// Para usarlo: @extend %flexbox;

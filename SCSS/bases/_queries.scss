@@ -1,0 +1,16 @@
+@media screen and (max-width:700px)
+{
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    
+    .seccion-2{
+        flex-direction: column;
+    }
+    .seccion-2 img{
+        width: 70%;
+    }
+}
