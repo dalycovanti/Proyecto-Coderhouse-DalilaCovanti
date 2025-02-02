@@ -1,0 +1,286 @@
+//----------------------------------------------------------------------------------------------------------
+// INDEX
+.seccion-1{
+    @extend %flexbox;
+    /* background-image: radial-gradient(#dbabbf,#dbabbf); */
+    background-image: radial-gradient(#d5acbd,#d5acbd);
+    position: relative;
+    margin-top: 70px;
+    img{
+        height: 500px;
+    }
+    button{
+        position:absolute;
+        margin: 10px;
+        top: 75%;
+        height: 40px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: #CDB4DB;
+        border-color: #CDB4DB;
+        a{
+            text-decoration: none;
+            font-size: 30px;
+        }
+    }
+}
+
+.seccion-2{
+    @extend %flexbox;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    a{
+        img{
+            height: 200px;
+            border-radius: 20px;
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+
+.haircare{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 90%;
+    h2{
+        text-align: center;
+    }
+    ul{
+        padding: 30px;
+        li{
+            padding-top: 10px;
+        }
+    }
+}
+
+.seccion-3{
+    background-color: #CDB4DB;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 1000px;
+    width: 100%;
+    img{
+        padding: 20px;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+}
+.img-expand{
+    grid-column: span 2;
+    object-fit: cover;
+}
+//----------------------------------------------------------------------------------------------------------
+// TIENDA
+.tienda{
+    text-align: center;
+    padding: 10px;
+    margin-top: 90px;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    margin-left: 30px;
+    margin-right: 30px;
+    div{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        margin: 10px;
+        justify-content: space-between;
+        img{
+            width: 100%;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            @extend %boton;
+            position: relative;
+            a{
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+//----------------------------------------------------------------------------------------------------------
+// DIAGNÓSTICO
+.diagnostico{
+    margin-top: 90px;
+    padding-left: 30px;
+    h2{
+        text-align: center;
+        padding: 10px;
+    }
+    p{
+
+    }
+    h6{
+        font-size: medium;
+        padding-top: 10px;
+    }
+    ul{
+        li{
+            padding-top: 10px;
+        }
+    }
+}
+.info-diagnostico{
+    width: 90%;
+    margin: 0 auto;
+}
+.tarjetas{
+    @extend %flexbox;
+    gap: 10px;
+    margin-top: 30px;
+    div{
+        p{
+            text-align: center;
+            background-color: #b6aec2;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+        img{
+            height: 300px;
+            border-radius: 3px;
+        }
+    }
+}
+.banner{
+    @extend %flexbox;
+    margin-top: 30px;
+    img{
+        width: 90%;
+        object-fit: cover;
+    }
+    div{
+        @extend %flexbox;
+        position: absolute;
+        flex-direction: column;
+        width: 700px;
+        background-color: rgba(0, 0, 0, 0.527);
+        padding: 30px;
+        border-radius: 3px;
+        h6{
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        p{
+            text-align: center;
+            padding: 20px;
+            color: white;      
+        }
+        button{
+            background-color: #BDE0FE;
+            width: 200px;
+            border-radius: 5px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// SOBRE NOSOTROS
+.sobre-nosotros{
+    margin-top: 90px;
+    h2{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    p{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    div{
+        background-color: #BDE0FE;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+        img{
+            height: 350px;
+            padding: 10px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+//----------------------------------------------------------------------------------------------------------
+// CONTACTO
+.direccion{
+    margin-top: 90px;
+    @extend %flexbox;
+    iframe{
+        margin: 30px;
+         width: 45%;
+    }     
+}
+.direccion_items{
+    div{
+        @extend %flexbox;
+        h2{
+            text-align: center;
+            padding: 10px;
+        }
+        p{
+        }
+    }
+}
+
+.contacto{
+    @extend %flexbox;
+    background-color:nth($colores,3);
+    margin: 30px;
+    p{
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    form{
+        @extend %flexbox;
+        flex-direction: column;
+        padding: 15px;
+        margin: 20px;
+        width: 40%;
+        background-color: rgba(0, 0, 0, 0.123);
+        div{
+            label{
+                margin: 8px;
+            }
+            input{
+                margin-top:  8px;
+            }
+            textarea{
+                margin-top:  8px;
+            }
+        }
+        button{
+            @extend %boton;
+            margin: 15px;
+        }
+    }
+}
+

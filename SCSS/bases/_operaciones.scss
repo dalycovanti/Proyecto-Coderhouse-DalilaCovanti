@@ -20,3 +20,9 @@ $colores: #FFC8DD, #FFAFCC, #CDB4DB, #BDE0FE, #A2D2FF;
     align-items: center;
 }
 // Para usarlo: @extend %flexbox;
+%boton{
+     padding: 5px;
+     background-color: #BDE0FE;
+     border-color: black;
+     border-radius: 5px;
+}
