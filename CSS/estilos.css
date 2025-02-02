@@ -1,4 +1,4 @@
-.contacto form, .contacto, .direccion_items div, .direccion, .banner div, .banner, .tarjetas, .seccion-2, .seccion-1 {
+.contacto form, .contacto, .direccion_items div, .direccion, .mision_valores, .quienes_somos, .banner div, .banner, .tarjetas, .seccion-2, .seccion-1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,19 +252,51 @@ header nav ul li a:hover {
   padding-left: 200px;
   padding-right: 200px;
 }
-.sobre-nosotros p {
+
+.quienes_somos {
+  background-image: url(../../img/banner\ quienes\ somos.jpg);
+  height: 250px;
+}
+.quienes_somos p {
   text-align: center;
   padding: 10px;
   margin: 10px;
   padding-left: 200px;
+}
+.quienes_somos img {
+  height: 200px;
   padding-right: 200px;
 }
-.sobre-nosotros div {
-  background-color: #BDE0FE;
+
+.mision_valores {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.mision {
+  width: 45%;
+  padding-right: 50px;
+}
+.mision h3 {
+  padding-bottom: 10px;
+}
+
+.valores h3 {
+  padding-bottom: 10px;
+}
+.valores ul li {
+  padding: 5px;
+}
+
+.grid_sobre_nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  background-color: #BDE0FE;
+  margin-top: 50px;
 }
-.sobre-nosotros div img {
+.grid_sobre_nosotros img {
   height: 350px;
   padding: 10px;
   width: 100%;

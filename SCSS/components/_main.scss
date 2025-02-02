@@ -207,23 +207,58 @@
         padding-left: 200px;
         padding-right: 200px;
     }
+}
+.quienes_somos{
+    background-image: url(../../img/banner\ quienes\ somos.jpg);
+    @extend %flexbox;
+    height: 250px;
     p{
         text-align: center;
         padding: 10px;
         margin: 10px;
         padding-left: 200px;
+    }
+    img{
+        height: 200px;
         padding-right: 200px;
     }
-    div{
-        background-color: #BDE0FE;
-        display: grid;
-        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-        img{
-            height: 350px;
-            padding: 10px;
-            width: 100%;
-            object-fit: cover;
+}
+
+.mision_valores{
+    @extend %flexbox;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 50px;
+}
+.mision{
+    width: 45%;
+    padding-right: 50px;
+    h3{
+        padding-bottom: 10px;
+    }
+}
+.valores{
+    h3{
+        padding-bottom: 10px;
+    }
+    ul{
+        li{
+            padding: 5px;
         }
+    }
+}
+
+.grid_sobre_nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    background-color:nth($colores, 4);
+    margin-top: 50px;
+    img{
+        height: 350px;
+        padding: 10px;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
