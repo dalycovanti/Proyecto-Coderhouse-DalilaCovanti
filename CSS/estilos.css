@@ -87,7 +87,16 @@ header nav ul li a:hover {
 
 .seccion-2 {
   padding-top: 50px;
-  flex-wrap: wrap;
+}
+.seccion-2 div {
+  width: 45%;
+  padding-right: 50px;
+}
+.seccion-2 div h3 {
+  padding: 10px;
+}
+.seccion-2 div p {
+  padding: 10px;
 }
 .seccion-2 a img {
   height: 200px;

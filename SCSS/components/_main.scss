@@ -28,7 +28,16 @@
 .seccion-2{
     @extend %flexbox;
     padding-top: 50px;
-    flex-wrap: wrap;
+    div{
+        width: 45%;
+        padding-right: 50px;
+        h3{
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+    }
     a{
         img{
             height: 200px;
