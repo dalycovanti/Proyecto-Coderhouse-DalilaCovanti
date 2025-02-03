@@ -273,8 +273,10 @@
 
 //----------------------------------------------------------------------------------------------------------
 // CONTACTO
-.direccion{
+.main_contacto{
     margin-top: 90px;
+}
+.direccion{
     @extend %flexbox;
     iframe{
         margin: 30px;

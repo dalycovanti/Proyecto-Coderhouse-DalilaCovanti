@@ -1,3 +1,83 @@
+@media screen and (max-width: 1000px)
+{
+    // INDEX
+    .seccion-2{
+        flex-direction: column;
+        div{
+            width: 90%;
+            padding: 20px;
+        }
+    }
+    // TIENDA 
+    .productos{
+        grid-template-columns: repeat(4, 3fr);
+    }
+    // DIAGNÓSTICO
+    .tarjetas{
+        div{
+            img{
+                height: 250px;
+            }
+        }
+    }
+    // SOBRE NOSOTROS
+    .quienes_somos{
+        p{
+            padding-left: 50px;
+        }
+        img{
+            padding-right: 50px;
+        }
+    }
+    .mision_valores{
+        flex-direction: column;
+    }
+    .mision{
+        width: 90%;
+        padding-bottom: 60px;
+    }
+    .valores{
+        width: 90%;
+    }
+    // CONTACTO
+    .direccion{
+        iframe{
+            width: 35%;
+        }
+    }
+    .contacto{
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:850px)
+{
+    // index
+    .seccion-3{
+        grid-template-columns: repeat(3, 1fr);
+        height: 1500px;
+    }
+    .img-expand{
+        grid-column: span 3;
+    }
+    // DIAGNÓSTICO
+    .tarjetas{
+        div{
+            img{
+                height: 200px;
+            }
+        }
+    }
+    // CONTACTO
+    .direccion_items{
+        div{
+            flex-direction: column;
+        }
+    }
+}
+
 @media screen and (max-width:700px)
 {
     header{
@@ -6,11 +86,223 @@
     nav{
         padding: 10px 0px;
     }
-    
-    .seccion-2{
-        flex-direction: column;
+    // INDEX
+    .seccion-1{
+        margin-top: 130px;
     }
-    .seccion-2 img{
-        width: 70%;
+    .seccion-3{
+        height: 600px;
+        img{
+            height: 300px;
+        }
+    }
+    .img-expand{
+        display: none;
+    }
+    // TIENDA 
+    .tienda{
+        margin-top: 150px;
+    }
+    .productos{
+        grid-template-columns: repeat(3, 3fr);
+    }
+    // DIAGNÓSTICO
+    .diagnostico{
+        margin-top: 150px;
+    }
+    .tarjetas{
+        div{
+            img{
+                height: 150px;
+            }
+        }
+    }
+    .banner{
+        div{
+            width: 85%;
+            h6{
+                padding: 10px;
+            }
+            p{
+                padding: 10px;
+            }
+        }
+    }
+    // SOBRE NOSOTROS
+    .sobre-nosotros{
+        margin-top: 150px;
+    }
+    .quienes_somos{
+        p{
+            padding: 30px;
+        }
+        img{
+            display: none;
+        }
+    }
+    .grid_sobre_nosotros{
+        grid-template-columns: 2fr 1fr;
+        img{
+            height: 200px;
+        }
+    }
+    .imagen-5{
+        display: none;
+    }
+    // CONTACTO
+    .main_contacto{
+        margin-top: 150px;
+        h2{
+            text-align: center;
+        }
+    }
+    .direccion{
+        flex-direction: column;
+        iframe{
+            width: 70%;
+        }
+    }
+    .direccion_items{
+        div{
+            flex-direction: row;
+        }
+        
     }
 }
+
+@media screen and (max-width: 600px)
+{
+   .seccion-1{
+        img{
+            height: 300px;
+        }
+        button{
+            height: 30px;
+            width: 150px;
+            a{
+                font-size: 20px;
+            }
+        }
+   } 
+   // CONTACTO
+   .direccion{
+        iframe{
+            height: 250px;
+        }
+   }
+   .contacto{
+        flex-direction: column;
+        p{
+            padding-left: 20px;
+        }
+        form{
+            width: 60%;
+        }
+   }
+}
+
+@media screen and (max-width:550px)
+{
+     // TIENDA 
+     .productos{
+        grid-template-columns: repeat(2, 3fr);
+    }
+    // DIAGNÓSTICO
+    .tarjetas{
+        div{
+            img{
+                height: 120px;
+            }
+        }
+    }
+    .banner{
+        img{
+            display: none;
+        }
+        div{
+            background-color:nth($colores,3);
+            position: relative;
+            button{
+                width: 100px;
+                a{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    // INDEX
+    .seccion-1{
+        img{
+            height: 200px;
+        }
+        button{
+            height: 30px;
+            width: 150px;
+            a{
+                font-size: 20px;
+            }
+        }
+   } 
+   .seccion-3{
+        height: 400px;
+        grid-template-columns: repeat(4, 1fr);
+        img{
+            height: 200px;
+            padding: 5px;
+        }
+    }
+   .img-expand{
+    display: block;
+        grid-column: span 2;
+        object-fit: cover;
+    }
+    // TIENDA 
+    .productos{
+        grid-template-columns: repeat(1, 3fr);
+    }
+    // DIAGNÓSTICO
+    .tarjetas{
+        div{
+            img{
+                height: 100px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    // SOBRE NOSOTROS
+    .sobre-nosotros{
+        h2{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .quienes_somos{
+        height: 300px;
+    }
+    // CONTACTO
+    .direccion_items{
+        div{
+            flex-direction: column;
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
+    .contacto{
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+// INDEX
+// TIENDA 
+// DIAGNÓSTICO
+// SOBRE NOSOTROS
+// CONTACTO
