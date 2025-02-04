@@ -247,13 +247,27 @@
 
 @media screen and (max-width: 400px)
 {
+    header{
+        nav{
+            ul{
+                flex-direction: column;
+                li{
+                    
+                    a{
+
+                    }
+                }
+            }
+        }
+    }
     // INDEX
     .seccion-1{
-        padding-top: 20px;
+        padding-top: 150px;
         img{
             height: 150px;
         }
         button{
+            top: 85%;
             height: 20px;
             width: 100px;
             a{
@@ -275,10 +289,16 @@
         object-fit: cover;
     }
     // TIENDA 
+    .tienda{
+        padding-top: 150px;
+    }
     .productos{
         grid-template-columns: repeat(1, 3fr);
     }
     // DIAGNÓSTICO
+    .diagnostico{
+        padding-top: 150px;
+    }
     .tarjetas{
         div{
             img{
@@ -291,6 +311,7 @@
     }
     // SOBRE NOSOTROS
     .sobre-nosotros{
+        padding-top: 150px;
         h2{
             padding-left: 0;
             padding-right: 0;
@@ -300,6 +321,9 @@
         height: 300px;
     }
     // CONTACTO
+    .main_contacto{
+        padding-top: 150px;
+    }
     .direccion_items{
         div{
             flex-direction: column;
@@ -314,9 +338,3 @@
         }
     }
 }
-
-// INDEX
-// TIENDA 
-// DIAGNÓSTICO
-// SOBRE NOSOTROS
-// CONTACTO

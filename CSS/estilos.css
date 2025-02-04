@@ -562,13 +562,17 @@ footer ul li:hover {
   }
 }
 @media screen and (max-width: 400px) {
+  header nav ul {
+    flex-direction: column;
+  }
   .seccion-1 {
-    padding-top: 20px;
+    padding-top: 150px;
   }
   .seccion-1 img {
     height: 150px;
   }
   .seccion-1 button {
+    top: 85%;
     height: 20px;
     width: 100px;
   }
@@ -588,8 +592,14 @@ footer ul li:hover {
     grid-column: span 2;
     object-fit: cover;
   }
+  .tienda {
+    padding-top: 150px;
+  }
   .productos {
     grid-template-columns: repeat(1, 3fr);
+  }
+  .diagnostico {
+    padding-top: 150px;
   }
   .tarjetas div img {
     height: 100px;
@@ -597,12 +607,18 @@ footer ul li:hover {
   .tarjetas div p {
     font-size: 13px;
   }
+  .sobre-nosotros {
+    padding-top: 150px;
+  }
   .sobre-nosotros h2 {
     padding-left: 0;
     padding-right: 0;
   }
   .quienes_somos {
     height: 300px;
+  }
+  .main_contacto {
+    padding-top: 150px;
   }
   .direccion_items div {
     flex-direction: column;
