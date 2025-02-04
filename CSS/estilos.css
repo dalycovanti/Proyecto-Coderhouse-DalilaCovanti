@@ -258,23 +258,21 @@ header nav ul li a:hover {
   text-align: center;
   padding: 10px;
   margin: 10px;
-  padding-left: 200px;
-  padding-right: 200px;
 }
 
 .quienes_somos {
   background-image: url(../../img/banner\ quienes\ somos.jpg);
-  height: 250px;
+  width: 100%;
 }
 .quienes_somos p {
   text-align: center;
   padding: 10px;
   margin: 10px;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 .quienes_somos img {
   height: 200px;
-  padding-right: 200px;
+  padding-right: 100px;
 }
 
 .mision_valores {
@@ -552,6 +550,9 @@ footer ul li:hover {
   .productos {
     grid-template-columns: repeat(2, 3fr);
   }
+  .diagnostico {
+    margin-top: 170px;
+  }
   .tarjetas div img {
     height: 120px;
   }
@@ -567,6 +568,9 @@ footer ul li:hover {
   }
   .banner div button a {
     font-size: 15px;
+  }
+  .main_contacto {
+    margin-top: 170px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -623,7 +627,7 @@ footer ul li:hover {
     padding-right: 0;
   }
   .quienes_somos {
-    height: 300px;
+    height: 100%;
   }
   .main_contacto {
     padding-top: 150px;

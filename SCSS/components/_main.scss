@@ -213,23 +213,21 @@
         text-align: center;
         padding: 10px;
         margin: 10px;
-        padding-left: 200px;
-        padding-right: 200px;
     }
 }
 .quienes_somos{
     background-image: url(../../img/banner\ quienes\ somos.jpg);
     @extend %flexbox;
-    height: 250px;
+    width: 100%;
     p{
         text-align: center;
         padding: 10px;
         margin: 10px;
-        padding-left: 200px;
+        padding-left: 100px;
     }
     img{
         height: 200px;
-        padding-right: 200px;
+        padding-right: 100px
     }
 }
 

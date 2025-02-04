@@ -233,6 +233,9 @@
         grid-template-columns: repeat(2, 3fr);
     }
     // DIAGNÓSTICO
+    .diagnostico{
+        margin-top: 170px;
+    }
     .tarjetas{
         div{
             img{
@@ -254,6 +257,10 @@
                 }
             }
         }
+    }
+    // CONTACTO
+    .main_contacto{
+        margin-top: 170px;
     }
 }
 
@@ -330,7 +337,7 @@
         }
     }
     .quienes_somos{
-        height: 300px;
+        height: 100%;
     }
     // CONTACTO
     .main_contacto{
