@@ -1,6 +1,11 @@
 @media screen and (max-width: 1000px)
 {
     // INDEX
+    .seccion-1{
+        img{
+            max-width: 90%;
+        }
+    }
     .seccion-2{
         flex-direction: column;
         div{
@@ -211,6 +216,11 @@
         }
     }
     // INDEX
+    .seccion-2{
+        div{
+            padding-right: 10px;
+        }
+    }
     .seccion-3{
         img{
             padding: 5px;

@@ -385,6 +385,9 @@ footer ul li:hover {
 }
 
 @media screen and (max-width: 1000px) {
+  .seccion-1 img {
+    max-width: 90%;
+  }
   .seccion-2 {
     flex-direction: column;
   }
@@ -537,6 +540,9 @@ footer ul li:hover {
 @media screen and (max-width: 550px) {
   header nav ul {
     padding-left: 10px;
+  }
+  .seccion-2 div {
+    padding-right: 10px;
   }
   .seccion-3 img {
     padding: 5px;
